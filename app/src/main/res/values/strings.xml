@@ -2,6 +2,8 @@
     <string name="app_name">Compare_txt</string>
     <string name="tittle_name">Comparar Texto...</string>
     <string name="button_text">Comparar</string>
-    <string name="text_input1">Texto 1</string>
-    <string name="text_input2">Texto 2</string>
+    <string name="text_input1">Inserte el 1° texto a comparar</string>
+    <string name="text_input2">Inserte el 2° texto a comparar</string>
+    <string name="my_image_description">Logo App</string>
+
 </resources>

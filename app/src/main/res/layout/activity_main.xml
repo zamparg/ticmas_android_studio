@@ -7,19 +7,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center_vertical"
-    tools:context=".view.MainActivity">
+    android:gravity="center"
+    tools:context=".view.MainActivity"
+    android:background="@color/primary">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="top"
+        app:layout_constraintBottom_toTopOf="@id/LOresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/LOresult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tittle_name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+ />
 
 
     <EditText
@@ -29,9 +46,12 @@
         android:ems="10"
         android:inputType="text"
         android:text="@string/text_input1"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/LOresult"/>
+        app:layout_constraintTop_toBottomOf="@id/LOresult"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/editText2"
@@ -40,18 +60,24 @@
         android:ems="10"
         android:inputType="text"
         android:text="@string/text_input2"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editText1" />
+        app:layout_constraintTop_toBottomOf="@id/editText1"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/CompareButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_text"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editText2" />
+        app:layout_constraintTop_toBottomOf="@id/editText2"
+        android:backgroundTint="@color/secondary"/>
+
 
 
 
